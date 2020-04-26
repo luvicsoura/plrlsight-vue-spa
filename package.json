@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "node server",
-    "test": "karma start test/unit/karma.config.js",
+    "test": "karma start test/unit/karma.config.js --single-run",
     "build:client": "webpack --config ./build/webpack.client.config.js --hide-modules",
     "build:server": "webpack --config ./build/webpack.server.config.js --hide-modules",
     "build": "rimraf ./dist && npm run build:client && npm run build:server",
